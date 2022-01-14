@@ -1,8 +1,8 @@
 const setActive = (el) => {
     const list = document.querySelectorAll('.menu-list-items');
     list.forEach((item) =>{
-        if(item.classList.contains('active')){
-            item.classList.remove('active')
+        if(item.classList.contains('.active-nav-link')){
+            item.classList.remove('.active-nav-link')
         }
     })
     el.classList.add('active')
@@ -31,7 +31,7 @@ arrows.forEach((arrow,i) => {
 })
 
 const toggleNode = document.querySelector(".toggle-node");
-const items = document.querySelectorAll(".container, .movie-list-container, .navbar-container, .sidebar, .sidbar-icons, .toggle");
+const items = document.querySelectorAll(".container, .movie-list-container, .navbar-container, .sidebar, .sidebar-icons, .toggle");
 
 toggleNode.addEventListener("click", ()=> {
     items.forEach((item) => {

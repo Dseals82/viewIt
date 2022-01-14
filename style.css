@@ -84,7 +84,7 @@ body {
      font-weight: bold;
  }
 
-.active {
+.active-nav-link {
     border-bottom: 2px solid #3EB489;
     font-weight: bold;
      
@@ -130,6 +130,7 @@ body {
      right:1px;
      border-radius: 50%;
      transition: all 1s ease-in-out;
+     cursor: pointer;
  }
 
 
@@ -223,9 +224,12 @@ body {
     margin-right: 30px;
     position: relative;
     cursor: pointer;
+    
 }
 
-
+img.movie-list-item-img {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
 
 .movie-list-item-img {
     width: 270px;
@@ -304,6 +308,10 @@ body {
     cursor: pointer;
 }
 
+.arrow:hover {
+    opacity: 90%;
+}
+
 
 
 /* ======light mode========= */
@@ -323,10 +331,11 @@ body {
 
 .sidebar.active {
     background-color: white;
+    color: black;
 }
 
 .sidebar-icons.active {
-    color: black;
+    color: black !important;
 }
 
 .toggle.active {
@@ -343,5 +352,12 @@ body {
 @media only screen and (max-width: 940px){
     .menu-container {
         display: none;
+    }
+    .featured-content {
+        background-size: cover;
+    }
+    .featured-description {
+        width: 350px;
+        
     }
 }
