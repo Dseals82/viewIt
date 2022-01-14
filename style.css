@@ -74,7 +74,7 @@ body {
 
  .menu-list-items {
      margin-right: 30px;
-     font-weight: 300;
+     font-weight: 400;
      cursor: pointer;
      transition: all 0.2s ease-in-out;
  }
@@ -129,6 +129,7 @@ body {
      position: absolute;
      right:1px;
      border-radius: 50%;
+     transition: all 1s ease-in-out;
  }
 
 
@@ -301,4 +302,46 @@ body {
     color: lightgray;
     opacity: 0.5;
     cursor: pointer;
+}
+
+
+
+/* ======light mode========= */
+
+.container.active {
+    background-color: white;
+}
+
+.movie-list-title.active {
+    color: black;
+}
+
+.navbar-container.active {
+    background-color: white;
+    color: black
+}
+
+.sidebar.active {
+    background-color: white;
+}
+
+.sidebar-icons.active {
+    color: black;
+}
+
+.toggle.active {
+    background-color: black;
+}
+
+.toggle-node.active{
+    background-color: white;
+    transform: translateX(-20px);
+}
+
+
+/* ==========Media Query=============== */
+@media only screen and (max-width: 940px){
+    .menu-container {
+        display: none;
+    }
 }
