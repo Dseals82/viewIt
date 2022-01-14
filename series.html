@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <title>Movies</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">
+                    <a href="index.html" class="logo-link"><span class="logo-first-word"><i class="fa fa-film" id="logo" aria-hidden="true"></i>view</span>It</a>
+                </h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <a href="index.html" class="menu-link"><li class="menu-list-items" onclick="setActiveLink(this)">Home</li></a>
+                    <a href="watchlist.html" class="menu-link"><li class="menu-list-items" onclick="setActiveLink(this)">Watchlist</li></a>
+                    <a href="series.html" class="menu-link"><li class="menu-list-items active-nav-link" onclick="setActiveLink(this)">Series</li></a>
+                    <a href="popular.html" class="menu-link"><li class="menu-list-items" onclick="setActiveLink(this)">Popular</li></a>
+                    <a href="trends.html" class="menu-link"><li class="menu-list-items" onclick="setActiveLink(this)">Trends</li></a>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img src="./img/nft-img.jpg" alt="(NFT) animated male smoking tobacco pipe" class="profile-picture">
+                <div class="profile-text-container">
+                    <span class="profile-text">Profile</span>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-node"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Side bar begins-->
+    <aside class="sidebar">
+        <i class="fas fa-search sidebar-icons"></i>
+        <i class="fas fa-home sidebar-icons"></i>
+        <i class="fas fa-users sidebar-icons"></i>
+        <i class="fas fa-bookmark sidebar-icons"></i>
+        <i class="fas fa-tv sidebar-icons"></i>
+        <i class="fas fa-hourglass-start sidebar-icons"></i>
+        <i class="fas fa-shopping-cart sidebar-icons"></i>
+    </aside> <!-- Side bar ends-->
+
+    <main class="series-container container">
+        <div class="content-container">
+            <div class="movie-list-container">
+                <div class="series-btn-header-container">
+                    <h1 id="series-movie-list-title" class="movie-list-title">Series</h1>
+                    <button class="series-btn">Featured <i class="fas fa-caret-down"></i></button>
+                </div>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img src="img/1.jpeg" alt="middle aged white male (Joaquin Phoenix) wearing red jacket.  He has green eyes and a mustache" class="movie-list-item-img">
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/2.jpeg" alt="middle aged white male (Joaquin Phoenix) wearing red jacket.  He has green eyes and a mustache" class="movie-list-item-img">
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/3.jpg" alt="middle aged white male (Joaquin Phoenix) wearing red jacket.  He has green eyes and a mustache" class="movie-list-item-img">
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/4.jpg" alt="middle aged white male (Joaquin Phoenix) wearing red jacket.  He has green eyes and a mustache" class="movie-list-item-img">
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/5.jpg" alt="middle aged white male (Joaquin Phoenix) wearing red jacket.  He has green eyes and a mustache" class="movie-list-item-img">
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/6.jpg" alt="middle aged white male (Joaquin Phoenix) wearing red jacket.  He has green eyes and a mustache" class="movie-list-item-img">
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/7.jpg" alt="middle aged white male (Joaquin Phoenix) wearing red jacket.  He has green eyes and a mustache" class="movie-list-item-img">
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+             </div> <!-- movie list container end -->
+
+             <div class="movie-list-container">
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img src="img/8.jpg" alt="middle aged white male (Joaquin Phoenix) wearing red jacket.  He has green eyes and a mustache" class="movie-list-item-img">
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/9.jpg" alt="middle aged white male (Joaquin Phoenix) wearing red jacket.  He has green eyes and a mustache" class="movie-list-item-img">
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/10.jpg" alt="middle aged white male (Joaquin Phoenix) wearing red jacket.  He has green eyes and a mustache" class="movie-list-item-img">
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/11.jpg" alt="middle aged white male (Joaquin Phoenix) wearing red jacket.  He has green eyes and a mustache" class="movie-list-item-img">
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/12.jpg" alt="middle aged white male (Joaquin Phoenix) wearing red jacket.  He has green eyes and a mustache" class="movie-list-item-img">
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/13.jpg" alt="middle aged white male (Joaquin Phoenix) wearing red jacket.  He has green eyes and a mustache" class="movie-list-item-img">
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/14.jpg" alt="middle aged white male (Joaquin Phoenix) wearing red jacket.  He has green eyes and a mustache" class="movie-list-item-img">
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+             </div> <!-- movie list container end -->
+
+             <div class="movie-list-container">
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img src="img/15.jpg" alt="middle aged white male (Joaquin Phoenix) wearing red jacket.  He has green eyes and a mustache" class="movie-list-item-img">
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/16.jpg" alt="middle aged white male (Joaquin Phoenix) wearing red jacket.  He has green eyes and a mustache" class="movie-list-item-img">
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/17.jpg" alt="middle aged white male (Joaquin Phoenix) wearing red jacket.  He has green eyes and a mustache" class="movie-list-item-img">
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/18.jpg" alt="middle aged white male (Joaquin Phoenix) wearing red jacket.  He has green eyes and a mustache" class="movie-list-item-img">
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/19.jpg" alt="middle aged white male (Joaquin Phoenix) wearing red jacket.  He has green eyes and a mustache" class="movie-list-item-img">
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/22.jpeg" alt="middle aged white male (Joaquin Phoenix) wearing red jacket.  He has green eyes and a mustache" class="movie-list-item-img">
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/24.jpeg" alt="middle aged white male (Joaquin Phoenix) wearing red jacket.  He has green eyes and a mustache" class="movie-list-item-img">
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+             </div> <!-- movie list container end -->
+
+             <div class="movie-list-container">
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img src="img/20.jpeg" alt="middle aged white male (Joaquin Phoenix) wearing red jacket.  He has green eyes and a mustache" class="movie-list-item-img">
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/21.jpeg" alt="middle aged white male (Joaquin Phoenix) wearing red jacket.  He has green eyes and a mustache" class="movie-list-item-img">
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/25.jpeg" alt="middle aged white male (Joaquin Phoenix) wearing red jacket.  He has green eyes and a mustache" class="movie-list-item-img">
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/26.jpeg" alt="middle aged white male (Joaquin Phoenix) wearing red jacket.  He has green eyes and a mustache" class="movie-list-item-img">
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/27.jpeg" alt="middle aged white male (Joaquin Phoenix) wearing red jacket.  He has green eyes and a mustache" class="movie-list-item-img">
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/28.jpeg" alt="middle aged white male (Joaquin Phoenix) wearing red jacket.  He has green eyes and a mustache" class="movie-list-item-img">
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="img/29.jpeg" alt="middle aged white male (Joaquin Phoenix) wearing red jacket.  He has green eyes and a mustache" class="movie-list-item-img">
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+             </div> <!-- movie list container end -->
+
+
+        </div>
+    </main>
+
+
+
+
+
+<!-- ===========Script for JS=============== -->
+    <script src="./script.js"></script>
+</body>
+</html>

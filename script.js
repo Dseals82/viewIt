@@ -6,9 +6,9 @@ const setActiveLink = (el) => {
         if(item.classList.contains('active-nav-link')){
             item.classList.remove('active-nav-link')
         }
-    })
+    });
     el.classList.add('active-nav-link')
-}
+};
 
 // ==========sets arrow functionality====================
 
@@ -16,8 +16,7 @@ const setArrowFunction = () => {
     const arrows = document.querySelectorAll(".arrow");
     const movieLists = document.querySelectorAll(".movie-list");
     let clickCounter = 0;
-    arrows.forEach((arrow,i) => {
-        
+    arrows.forEach((arrow,i) => {   
         const itemNumber = movieLists[i].querySelectorAll("img").length;
         arrow.addEventListener('click', () => {
             const ratio = Math.floor(window.innerWidth / 270);
@@ -29,10 +28,10 @@ const setArrowFunction = () => {
                 clickCounter = 0;
             }
             
-        })
+        });
 
-    })
-}
+    });
+};
 
 setArrowFunction();
 
@@ -40,7 +39,7 @@ setArrowFunction();
 
 const setToogleMode = () => {
     const toggleNode = document.querySelector(".toggle-node");
-    const items = document.querySelectorAll(".container, .movie-list-container, .navbar-container, .sidebar, .sidebar-icons, .toggle");
+    const items = document.querySelectorAll(".container, .movie-list-container, .navbar-container, .sidebar, .sidebar-icons, .toggle, .menu-link, .watchlist-container, .watchlist-plus, .watchlist-header, .watchlist-paragraph, #series-movie-list-title, .series-btn");
 
     toggleNode.addEventListener("click", ()=> {
         items.forEach((item) => {
@@ -48,6 +47,6 @@ const setToogleMode = () => {
         })
         toggleNode.classList.toggle("active");
     });
-}
+};
 
 setToogleMode();

@@ -7,7 +7,7 @@ btn:hover background-color: #4dc99b; */
 * {
     margin: 0;
 }
-/* prevent white border bounce on scroll */
+/* prevent white border bounce on page scroll */
 html {
     overflow: hidden;
     height: 100%;
@@ -54,6 +54,12 @@ body {
     cursor: pointer;
 }
 
+#logo  {
+    display: inherit;
+    padding-right: 2px;
+    
+}
+
 .logo:hover {
     color: #4dc99b;
 }
@@ -63,6 +69,15 @@ body {
     font-weight: 300;
     padding-left: 1px;
 }
+
+.logo-link, .logo-link:active, .logo-link:visited, .logo-link:visited {
+ text-decoration: none;   
+ color:#3EB489;
+}
+.logo-link:hover {
+    color: #4dc99b;;
+}
+
 .menu-container {
     flex: 6; 
  }
@@ -87,6 +102,15 @@ body {
 .active-nav-link {
     border-bottom: 2.2px solid #3EB489;
     font-weight: bold;
+ }
+
+ .menu-link {
+     text-decoration:none;
+     color:white;
+ }
+
+ .menu-link:link, .menu-link:visited, .menu-link:hover, .menu-link:active {
+     text-decoration: none;
  }
  
  .profile-container {
@@ -132,8 +156,6 @@ body {
      cursor: pointer;
  }
 
-
-
 .sidebar {
     width: 50px;
     height: 100%;
@@ -145,6 +167,13 @@ body {
     align-items: center;
     padding-top: 60px;
     z-index: 10;
+    transition: all .5s ease-in-out;
+}
+
+.sidebar:hover {
+    width: 90px;
+    background: linear-gradient(to right bottom, rgba(0,0,0,0), #151515);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; 
 }
 
 .sidebar-icons {
@@ -152,12 +181,6 @@ body {
     font-size: 20px;
     margin-bottom: 40px;
     cursor: pointer;
-}
-
-#logo  {
-    display: inherit;
-    padding-right: 2px;
-    
 }
 
 .container {
@@ -311,8 +334,6 @@ img.movie-list-item-img {
     opacity: 90%;
 }
 
-
-
 /* ======light mode========= */
 
 .container.active {
@@ -337,6 +358,12 @@ img.movie-list-item-img {
     color: black !important;
 }
 
+.sidebar.active:hover {
+    width: 90px;
+    background: linear-gradient(to right bottom, rgba(243, 240, 240, 0), #f8f8f8); 
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
 .toggle.active {
     background-color: black;
 }
@@ -346,8 +373,45 @@ img.movie-list-item-img {
     transform: translateX(-20px);
 }
 
+.menu-link.active {
+    color:black;
+}
 
-/* ==========Media Query=============== */
+.watchlist-container.active {
+    background: url(img/white-gradient-background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.watchlist-plus.active {
+    color: black;
+    opacity: 0.5;
+}
+
+.watchlist-header.active {
+    color:black;
+}
+
+.watchlist-paragraph.active {
+    color: black;
+}
+
+#series-movie-list-title.active {
+    color:black;
+}
+
+.series-btn.active {
+    color:white;
+    background-color: black;
+}
+
+/* ==========Media Queries=============== */
 @media only screen and (max-width: 940px){
     .menu-container {
         display: none;
@@ -360,3 +424,63 @@ img.movie-list-item-img {
         
     }
 }
+
+/* ===================watchlist page=========== */
+
+.watchlist-container {
+    background: url(img/black-gradient.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.watchlist-plus {
+    font-size: 80px;
+    color: lightgray;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    margin: bottom;
+}
+
+.watchlist-plus:hover {
+    opacity: 90%;
+}
+
+.watchlist-header {
+    margin-top: 30px;
+    margin-bottom: 1rem;
+}
+
+/* ===========series page================ */
+
+.series-container {
+    margin-top: 50px;
+}
+
+#series-movie-list-title {
+    margin-top: 60px;
+}
+
+.series-btn-header-container {
+    display: flex;
+    
+}
+
+.series-btn {
+    background-color: white;
+    align-self: end;
+    margin-left: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
