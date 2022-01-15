@@ -39,7 +39,7 @@ setArrowFunction();
 
 const setToogleMode = () => {
     const toggleNode = document.querySelector(".toggle-node");
-    const items = document.querySelectorAll(".container, .movie-list-container, .navbar-container, .sidebar, .sidebar-icons, .toggle, .menu-link, .watchlist-container, .watchlist-plus, .watchlist-header, .watchlist-paragraph, #series-movie-list-title, .series-btn");
+    const items = document.querySelectorAll(".container, .movie-list-container, .navbar-container, .sidebar, .sidebar-icons, .toggle, .menu-link, .watchlist-container, .watchlist-plus, .watchlist-header, .watchlist-paragraph, #series-movie-list-title, .series-btn, #search-title");
 
     toggleNode.addEventListener("click", ()=> {
         items.forEach((item) => {

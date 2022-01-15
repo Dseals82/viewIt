@@ -412,6 +412,11 @@ img.movie-list-item-img {
     background-color: black;
 }
 
+#search-title {
+    color: white;
+    margin-top: 60px;
+}
+
 /* ===================watchlist page=========== */
 
 .watchlist-container {
@@ -471,6 +476,30 @@ img.movie-list-item-img {
     cursor: pointer;
 }
 
+/* ==============search page=============== */
+#search-input {
+    width: 75%;
+    font-size: 30px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    background: transparent;
+    margin-left: -33px;
+    border-bottom: 1px solid white;
+}
+
+#search-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 55%; /* Firefox */
+  }
+
+  .search-feature {
+      margin-bottom: -100px;;
+  }
+
+  .search-title {
+      margin-top: 60px;
+  }
 
 /* ==========Media Queries=============== */
 @media only screen and (max-width: 940px){
