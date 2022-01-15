@@ -104,12 +104,13 @@ body {
     font-weight: bold;
  }
 
- .menu-link {
+ .menu-link, .side-link {
      text-decoration:none;
      color:white;
  }
 
- .menu-link:link, .menu-link:visited, .menu-link:hover, .menu-link:active {
+ .menu-link:link, .menu-link:visited, .menu-link:hover, .menu-link:active,
+ .side-link:link, .side-link:visited, .side-link:hover, .side-link:active {
      text-decoration: none;
  }
  
@@ -411,20 +412,6 @@ img.movie-list-item-img {
     background-color: black;
 }
 
-/* ==========Media Queries=============== */
-@media only screen and (max-width: 940px){
-    .menu-container {
-        display: none;
-    }
-    .featured-content {
-        background-size: cover;
-    }
-    .featured-description {
-        width: 350px;
-        
-    }
-}
-
 /* ===================watchlist page=========== */
 
 .watchlist-container {
@@ -484,3 +471,21 @@ img.movie-list-item-img {
     cursor: pointer;
 }
 
+
+/* ==========Media Queries=============== */
+@media only screen and (max-width: 940px){
+    .menu-container {
+        display: none;
+    }
+    .featured-content {
+        background-size: cover;
+    }
+    .featured-description {
+        width: 325px;
+        line-height: 22px;
+        
+    }
+    .movie-list-title {
+        margin-top: 30px;
+    }
+}
