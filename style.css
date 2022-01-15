@@ -653,7 +653,7 @@ input:focus {
         background-size: cover;
     }
     .featured-description {
-        width: 225px;
+        width: 255px;
         line-height: 22px;
         text-align: justify;
         
@@ -665,7 +665,7 @@ input:focus {
         width: 100%;
     }
     .featured-title {
-        width: 230px;
+        width: 250px;
     }
 
     .watchlist-paragraph {
