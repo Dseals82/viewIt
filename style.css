@@ -486,6 +486,7 @@ img.movie-list-item-img {
     background: transparent;
     margin-left: -33px;
     border-bottom: 1px solid white;
+    caret-color: white;
 }
 
 #search-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -500,6 +501,148 @@ img.movie-list-item-img {
   .search-title {
       margin-top: 60px;
   }
+
+  /* ===================watchlist page=========== */
+
+.purchase-container {
+    background: url(img/black-gradient.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.purchase-content-container {
+    background-color: white;
+    width: 600px;
+    border-radius: 30px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 80px;
+    margin-top: 3rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+
+
+.card-img {
+    width: 120px;
+}
+
+.payment-header {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.payment {
+    align-self: flex-start;
+    padding-bottom: 8px;
+    font-weight: bold;
+    
+}
+
+.amount-placeholder {
+    align-self: flex-start;
+}
+
+#PayButton {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #3EB489;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    margin-top: 22px;
+}
+
+#PayButton:hover {
+    background-color: #4dc99b; 
+}
+
+#NameOnCard {
+    padding: 8px;
+    border-radius: 8px; 
+    outline: none;
+    border: 1px solid lightgray;
+}
+
+#ExpirationDate{
+    padding: 8px;
+    border-radius: 8px 0 0 8px; 
+    border: 1px solid lightgray;
+    
+}
+
+#SecurityCode {
+    padding: 8px;
+    border-radius: 0 8px 8px 0; 
+    border: 1px solid lightgray;
+}
+
+#ZIPCode {
+    padding: 8px;
+    border-radius: 8px; 
+    border: 1px solid lightgray;
+}
+
+.expr-security-container {
+    display: flex;
+    
+}
+
+.security-code-group, .expiration-date-group {
+    flex: 1;
+    position: relative;
+}
+
+.security-code-group, .zip-code-group {
+    position: relative;
+}
+
+
+
+input:focus {
+    outline: none;
+}
+
+#cvc {
+    position: absolute;
+    top: 53px;
+    left: 272px;
+    color: lightgray;
+    cursor: pointer;
+}
+
+#zip-circle {
+    top: 53px;
+    bottom: 10px;
+    left: 573px;
+    position: absolute;
+    color: lightgray;
+    cursor: pointer;
+}
+
+#cvc:hover, #zip-circle:hover {
+    color: rgb(126, 126, 126);
+}
+
+.label-m {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
 
 /* ==========Media Queries=============== */
 @media only screen and (max-width: 940px){

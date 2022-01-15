@@ -52,5 +52,11 @@ const setToogleMode = () => {
 setToogleMode();
 
 
+// =================search input function=================
+
+const searchInput = () => {
+    console.log('you are searching')
+}
+
 
 
