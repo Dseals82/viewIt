@@ -645,7 +645,7 @@ input:focus {
 }
 
 /* ==========Media Queries=============== */
-@media only screen and (max-width: 940px){
+@media only screen and (max-width: 480px){
     .menu-container {
         display: none;
     }
@@ -672,9 +672,17 @@ input:focus {
         width: 300px;
         text-align: center;
     }
+
+    .watchlist-container{
+        padding-left: 25px;
+    }
     
     .purchase-content-container {
         width: 123px;
+    }
+
+    .purchase-container {
+        margin-left: 20px;
     }
 
     .amount-placeholder {
@@ -683,5 +691,15 @@ input:focus {
 
     .expr-security-container {
         display: inline-block;
+    }
+
+    #search-input {
+        width: 110%;
+    }
+}
+
+@media only screen and (max-width: 940px){
+    .menu-container {
+        display: none;
     }
 }
