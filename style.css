@@ -653,11 +653,35 @@ input:focus {
         background-size: cover;
     }
     .featured-description {
-        width: 325px;
+        width: 225px;
         line-height: 22px;
+        text-align: justify;
         
     }
     .movie-list-title {
-        margin-top: 30px;
+        margin-top: 30px 3px;
+    }
+    .featured-btn {
+        width: 100%;
+    }
+    .featured-title {
+        width: 230px;
+    }
+
+    .watchlist-paragraph {
+        width: 300px;
+        text-align: center;
+    }
+    
+    .purchase-content-container {
+        width: 123px;
+    }
+
+    .amount-placeholder {
+        align-self: center;
+    }
+
+    .expr-security-container {
+        display: inline-block;
     }
 }
