@@ -649,7 +649,7 @@ input:focus {
 }
 
 /* ==========Media Queries=============== */
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 380px){
     .menu-container {
         display: none;
     }
@@ -716,7 +716,7 @@ input:focus {
         display: none;
     }
     .featured-description {
-        width: 360px;
+        width: 345px;
         line-height: 22px;
         text-align: justify;
         
