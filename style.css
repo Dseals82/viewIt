@@ -661,6 +661,11 @@ input:focus {
     .movie-list-title {
         margin-top: 30px 3px;
     }
+
+    .movie-list-container {
+        margin-top: 40px;
+    }
+
     .featured-btn {
         width: 100%;
     }
@@ -696,10 +701,65 @@ input:focus {
     #search-input {
         width: 110%;
     }
+    .series-btn-header-container{
+        flex:wrap;
+    }
 }
 
-@media only screen and (max-width: 940px){
+@media only screen and (max-width: 640px){
     .menu-container {
         display: none;
     }
+    .featured-description {
+        width: 360px;
+        line-height: 22px;
+        text-align: justify;
+        
+    }
+
+    .featured-btn {
+        width: 100%;
+    }
+    .featured-title {
+        width: 250px;
+        position: relative;
+        
+        
+    }
+
+    .watchlist-container{
+        padding-left: 25px;
+    }
+
+    .purchase-content-container {
+        width: 123px;
+        height: 500px;
+        overflow: scroll;
+        
+    }
+
+    .series-btn-header-container{
+        flex:wrap;
+    }
+
+    .amount-placeholder {
+        align-self: center;
+    }
+
+    .expr-security-container {
+        display: inline-block;
+    }
+
+    .movie-list-container {
+        margin-top: 100px;
+    }
+
+    #cvc {
+        left:100px
+    }
+    #zip-circle {
+        left: 100px
+    }
+
 }
+
