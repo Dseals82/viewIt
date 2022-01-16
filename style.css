@@ -335,6 +335,10 @@ img.movie-list-item-img {
     opacity: 90%;
 }
 
+.series-btn-header-container {
+    margin: 10px;
+}
+
 /* ======light mode========= */
 
 .container.active {
@@ -701,8 +705,9 @@ input:focus {
     #search-input {
         width: 110%;
     }
-    .series-btn-header-container{
-        flex:wrap;
+
+    .series-movie-list-title {
+        margin: 0;
     }
 }
 
@@ -761,5 +766,9 @@ input:focus {
         left: 100px
     }
 
+    .series-movie-list-title {
+        margin: 0;
+    }
+    
 }
 
